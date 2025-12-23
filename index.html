@@ -1,0 +1,785 @@
+<!doctype html>
+<html lang="id">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Abdullah & Intan </title>
+
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Poppins:wght@100;300;400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplycountdown.js@1.5.0/css/simplyCountdown.theme.default.css" />
+  <script src="https://cdn.jsdelivr.net/npm/simplycountdown.js@1.5.0/dist/simplyCountdown.min.js"></script>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <style>
+:root {
+  --primary-color: #d4af37; 
+  --bg-color: #0f0f0f; 
+  --bg-secondary: #1a1a1a;
+  --text-color: #f0f0f0;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Cinzel', serif;
+  color: var(--primary-color);
+}
+
+
+.hero {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  
+ 
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('image/foto depan/bg-prewed.jpg');
+  
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} 
+
+
+.hero h1 {
+  font-size: 4rem;
+  text-shadow: 2px 2px 10px rgba(0,0,0,0.8);
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+.simply-countdown > .simply-section {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  border: 1px solid var(--primary-color);
+  border-radius: 10px;
+}
+
+
+.mynavbar {
+  background-color: rgba(0, 0, 0, 0.8) !important;
+  backdrop-filter: blur(10px);
+}
+.mynavbar .navbar-brand {
+  font-family: 'Cinzel'; 
+  color: var(--primary-color); 
+  font-weight:bold; 
+  font-size: 1.5rem;
+}
+.mynavbar .navbar-toggler-icon {
+    filter: invert(1);
+}
+.mynavbar .offcanvas-title {
+    font-family: 'Cinzel'; 
+    color: var(--primary-color);
+}
+.mynavbar .nav-link {
+  color: white !important;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
+.mynavbar .nav-link:hover {
+  color: var(--primary-color) !important;
+}
+
+
+section {
+  padding: 5rem 0;
+}
+
+.home, .info, .story, .gallery, .rsvp, .gifts {
+  background-color: var(--bg-color);
+}
+
+.info, .gallery, .gifts {
+  background-color: var(--bg-secondary);
+}
+
+
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  color: white;
+  backdrop-filter: blur(5px);
+}
+.card-header {
+  background-color: rgba(212, 175, 55, 0.2);
+  border-bottom: 1px solid var(--primary-color);
+  font-family: 'Cinzel', serif;
+  font-weight: bold;
+}
+
+
+.timeline {
+  list-style: none;
+  padding: 0;
+  position: relative;
+}
+.timeline:before {
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  content: "";
+  width: 2px;
+  background-color: var(--primary-color);
+  left: 50%;
+  margin-left: -1.5px;
+}
+.timeline > li {
+
+  margin-bottom: 8rem; 
+  position: relative;
+  min-height: 50px;
+}
+.timeline > li .timeline-panel {
+  width: 46%;
+  float: left;
+  border: 1px solid var(--primary-color);
+  padding: 20px;
+  position: relative;
+  border-radius: 8px;
+  background: var(--bg-secondary);
+}
+.timeline > li .timeline-image {
+  left: 50%;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  z-index: 100;
+  background-color: #fff;
+  border: 5px solid var(--primary-color);
+  border-radius: 50%;
+  margin-left: -50px;
+  background-size: cover;
+  background-position: center;
+}
+.timeline > li.timeline-inverted > .timeline-panel {
+  float: right;
+}
+
+
+.img-crop {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  
+  object-position: top center; 
+  border: 3px solid var(--primary-color);
+  padding: 5px;
+}
+
+.gallery img {
+    transition: transform 0.3s ease;
+    border: 1px solid #333;
+}
+.gallery img:hover {
+    transform: scale(1.05);
+    border-color: var(--primary-color);
+}
+
+
+.form-control, .form-select {
+  background-color: #2a2a2a;
+  border: 1px solid #444;
+  color: white;
+}
+.form-control:focus, .form-select:focus {
+  background-color: #333;
+  color: white;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 0.25rem rgba(212, 175, 55, 0.25);
+}
+
+
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: black;
+  font-weight: bold;
+}
+.btn-primary:hover {
+  background-color: #bfa34a;
+  border-color: #bfa34a;
+}
+
+
+.heart {
+    color: var(--primary-color);
+    font-size: 2rem;
+    animation: heartbeat 1.5s infinite;
+    display: block;
+    margin: 20px 0;
+}
+
+@keyframes heartbeat {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+
+.audio-icon-wrapper {
+    width: 4rem;
+    height: 4rem;
+    font-size: 4rem;
+    position: fixed;
+    bottom: 2.5rem;
+    right: 2rem;
+    cursor: pointer;
+    color: var(--primary-color);
+    opacity: 0.7;
+    mix-blend-mode: difference;
+    animation: rotating 4s linear infinite;
+    transform-origin: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 0;
+    z-index: 9999;
+}
+
+@keyframes rotating {
+    from { transform: rotate(0); }
+    to { transform: rotate(360deg); }
+}
+
+@media (max-width: 768px) {
+    .timeline:before { left: 40px; }
+    .timeline > li .timeline-panel { width: calc(100% - 90px); float: right; }
+    .timeline > li .timeline-image { left: 0; margin-left: 0; }
+    .hero h1 { font-size: 2.5rem; }
+}
+
+  </style>
+</head>
+
+<body>
+
+  <section id="hero" class="hero w-100 p-3 mx-auto text-center text-white">
+    <main data-aos="fade-up" data-aos-duration="1500">
+      <h4 class="mb-3">Kepada <span>Bapak/Ibu/Saudara/i, </span></h4>
+      <h1 class="mb-4">Abdullah & Intan</h1>
+      <p>Akan melangsungkan resepsi pernikahan dalam:</p>
+      <div class="simply-countdown mt-4"></div>
+      <a href="#home" class="btn btn-primary mt-5 px-4 py-2" onClick="enableScroll()">Lihat Undangan</a>
+    </main>
+  </section>
+
+  <nav class="navbar navbar-expand-md fixed-top mynavbar">
+    <div class="container">
+      <a class="navbar-brand" href="#" style="font-family: 'Cinzel'; color: var(--primary-color); font-weight:bold; font-size: 1.5rem;">A & I</a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
+      </button>
+      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel" style="font-family: 'Cinzel'; color: var(--primary-color);">A & I</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div class="navbar-nav ms-auto">
+            <a class="nav-link" href="#home">Home</a>
+            <a class="nav-link" href="#story">story</a>
+            <a class="nav-link" href="#gallery">Gallery</a>
+            <a class="nav-link" href="#info">info</a>
+            <a class="nav-link" href="#rsvp">RSVP</a>
+            <a class="nav-link" href="#gifts">Gifts</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <section id="home" class="home">
+    <div class="container">
+      <div class="row justify-content-center" data-aos="fade-down">
+        <div class="col-md-8 text-center">
+          <h2>Acara Pernikahan</h2>
+          <h3 class="text-white-50 fs-5 mb-5">Diselenggarakan pada 19 Mei 2029 di Jakarta.</h3>
+          <p>Dengan memohon rahmat dan ridho Allah Subhanahu Wa Ta'ala, kami bermaksud menyelenggarakan pernikahan putra-putri kami:</p>
+        </div>
+      </div>
+
+      <div class="row couple mt-5 align-items-center">
+        <div class="col-lg-5 text-center" data-aos="fade-right">
+            <img src="image/foto depan/foto-abdul.jpg" alt="Abdullah" class="jpg img-crop rounded-circle mb-3">
+            <h3>Abdullah Irfan Budiono S.KOM</h3>
+            <p>Putra dari Bpk. Budi Yadi & Ibu Rulia</p>
+        </div>
+
+        <div class="col-lg-2 text-center" data-aos="zoom-in">
+             <span class="heart"><i class="bi bi-heart-fill"></i></span>
+        </div>
+
+        <div class="col-lg-5 text-center" data-aos="fade-left">
+            <img src="image/foto depan/foto-intan.jpg" alt="Intan" class="jpg img-crop rounded-circle mb-3">
+            <h3>Intan Lestari S.KOM</h3>
+            <p>Putri dari Bpk. Samsul Anwar & Ibu Arsiah</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <style>
+
+.img-crop {
+  width: 220px;
+  height: 220px;
+
+  object-fit: cover;
+  object-position: top center;
+  background-color: #ddd; 
+  border: 4px solid #d4af37; 
+  padding: 3px; 
+}
+
+@media (max-width: 576px) {
+  .img-crop {
+    width: 180px;
+    height: 180px;
+  }
+}
+</style>
+  <section id="story" class="story">
+    <div class="container">
+      <div class="row justify-content-center" data-aos="fade-down">
+        <div class="col-md-8 col-10 text-center">
+          <span style="color: var(--primary-color); letter-spacing: 2px;">PERJALANAN CINTA</span>
+          <h2>Cerita Kami</h2>
+          <p class="text-white-50">Setiap cerita cinta itu indah, tapi cerita kami adalah favorit kami.</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <ul class="timeline">
+            <li data-aos="fade-right">
+              <div class="timeline-image" style="background-image: url('image/foto/foto-sekolah.jpg');"></div>
+              
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h3>Pertama Bertemu</h3>
+                  <span class="text-white-50">1 Juni 2021</span>
+                </div>
+                <div class="timeline-body">
+                  <p>Pertama Bertemu Di SMA 5 Kabupaten Tangerang.</p>
+                </div>
+              </div>
+            </li>
+            
+            <li class="timeline-inverted" data-aos="fade-left">
+              <div class="timeline-image" style="background-image: url('image/foto/berdua-2.jpg');"></div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h3>Mulai Serius</h3>
+                  <span class="text-white-50">1 juni 2025</span>
+                </div>
+                <div class="timeline-body">
+                  <p>Kami memutuskan untuk melangkah ke jenjang yang lebih serius dan berkomitmen satu sama lain.</p>
+                </div>
+              </div>
+            </li>
+            
+            <li data-aos="fade-right">
+              <div class="timeline-image" style="background-image: url('image/foto/foto-berdua.jpeg');"></div>
+              <div class="timeline-panel">
+                <div class="timeline-heading">
+                  <h3>Tunangan</h3>
+                  <span class="text-white-50">19 Mei 2029</span>
+                </div>
+                <div class="timeline-body">
+                  <p>Satu langkah lebih dekat menuju hari bahagia kami. Mengikat janji untuk selamanya.</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+ <section id="gallery" class="gallery">
+    <div class="container">
+      <div class="row justify-content-center" data-aos="fade-up">
+        <div class="col-md-8 col-10 text-center">
+          <span style="color: var(--primary-color);">MEMORI</span>
+          <h2>Galeri Foto</h2>
+        </div>
+      </div>
+
+      <div class="row row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-1 justify-content-center g-3 mt-3">
+        
+        <div class="col" data-aos="zoom-in" data-aos-delay="100">
+          <a href="image/foto/foto-berdua.jpeg" data-toggle="lightbox" data-gallery="mygallery">
+            <img src="image/foto/foto-berdua.jpeg" alt="Foto Berdua" class="img-fluid w-100 rounded">
+          </a>
+        </div>
+        
+        <div class="col" data-aos="zoom-in" data-aos-delay="200">
+           <a href="image/galerry/karikatur 1.jpeg" data-toggle="lightbox" data-gallery="mygallery">
+            <img src="image/galerry/karikatur 1.jpeg" alt="Foto 2" class="img-fluid w-100 rounded">
+          </a>
+        </div>
+        
+        <div class="col" data-aos="zoom-in" data-aos-delay="300">
+           <a href="image/galerry/karikatur 2.jpeg" data-toggle="lightbox" data-gallery="mygallery">
+            <img src="image/galerry/karikatur 2.jpeg" alt="Foto 3" class="img-fluid w-100 rounded">
+          </a>
+        </div>
+        
+        <div class="col" data-aos="zoom-in" data-aos-delay="400">
+           <a href="image/galerry/karikatur 3.jpeg" data-toggle="lightbox" data-gallery="mygallery">
+            <img src="image/galerry/karikatur 3.jpeg" alt="Foto 4" class="img-fluid w-100 rounded">
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+<section id="info" class="info">
+  <div class="container">
+    <div class="row justify-content-center" data-aos="fade-up">
+      <div class="col-md-8 col-10 text-center">
+        <h2>Informasi Acara</h2>
+        <p class="alamat mb-4">
+          Alamat: Gedung Pernikahan Assembly Hall Menara Mandiri by IKK Indonesia. <br> 
+          Jl. Jenderal Sudirman No.Kav 54-55, RT.5/RW.3, Senayan, Kec. Kby. Baru, Kota Jakarta Selatan
+        </p>
+
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.294226199419!2d106.80399197499037!3d-6.224881993763162!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f1454504192d%3A0x6b4f7422f2812af9!2sAssembly%20Hall%20Menara%20Mandiri%20by%20IKK%20Indonesia!5e0!3m2!1sid!2sid!4v1709223456789!5m2!1sid!2sid" 
+          width="100%" 
+          height="400" 
+          style="border:0; filter: invert(90%) hue-rotate(180deg); border-radius: 10px;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+
+        <br>
+        <a href="https://maps.app.goo.gl/9UuWW84bg3NmJRnM8" target="_blank" class="btn btn-outline-light btn-sm mt-3 mb-5">
+          <i class="bi bi-map-fill me-1"></i> Buka Peta
+        </a>
+
+      </div>
+    </div>
+
+    <div class="row justify-content-center mt-4 g-4">
+      <div class="col-md-5 col-10" data-aos="flip-left">
+        <div class="card text-center mb-5 h-100">
+          <div class="card-header">Akad Nikah</div>
+          <div class="card-body">
+            <div class="row justify-content-center">
+              <div class="col-md-6">
+                <i class="bi bi-clock d-block fs-2 mb-2" style="color:var(--primary-color)"></i>
+                <span>08.00 - 10.00</span>
+              </div>
+              <div class="col-md-6">
+                <i class="bi bi-calendar3 d-block fs-2 mb-2" style="color:var(--primary-color)"></i>
+                <span>Minggu, 19 Mei 2029</span>
+              </div>
+            </div>
+          </div>
+          <div class="card-footer bg-transparent border-top-0 text-white-50">
+            <small>Saat acara akad diharapkan untuk kondusif menjaga kekhidmatan.</small>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-5 col-10" data-aos="flip-right">
+        <div class="card text-center h-100">
+          <div class="card-header">Resepsi</div>
+          <div class="card-body">
+            <div class="row justify-content-center">
+              <div class="col-md-6">
+                <i class="bi bi-clock d-block fs-2 mb-2" style="color:var(--primary-color)"></i>
+                <span>11.00 - Selesai</span>
+              </div>
+              <div class="col-md-6">
+                <i class="bi bi-calendar3 d-block fs-2 mb-2" style="color:var(--primary-color)"></i>
+                <span>Minggu, 19 Mei 2029</span>
+              </div>
+            </div>
+          </div>
+           <div class="card-footer bg-transparent border-top-0 text-white-50">
+            <small>Merupakan sebuah kehormatan bagi kami apabila Anda berkenan hadir.</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  <section id="rsvp" class="rsvp">
+  <div class="container">
+    <div class="row justify-content-center" data-aos="fade-down">
+      <div class="col-md-8 col-10 text-center">
+        <h2>Konfirmasi Kehadiran</h2>
+        <p>Mohon konfirmasi kehadiran Anda untuk membantu kami mempersiapkan acara.</p>
+      </div>
+    </div>
+
+    <form class="row row-cols-md-auto g-3 align-items-center justify-content-center mt-3" id="rsvp-form">
+      
+      <div class="col-12">
+        <div class="mb-3">
+          <label for="nama" class="form-label">Nama</label>
+          <input type="text" class="form-control" id="nama" placeholder="Nama Lengkap" required>
+        </div>
+      </div>
+      
+      <div class="col-12">
+        <div class="mb-3">
+          <label for="jumlah" class="form-label">Jumlah</label>
+          <input type="number" class="form-control" id="jumlah" min="1" max="5" value="1" required>
+        </div>
+      </div>
+      
+      <div class="col-12">
+        <div class="mb-3">
+          <label for="status" class="form-label">Konfirmasi</label>
+          <select id="status" class="form-select" required>
+            <option selected value="">Pilih...</option>
+            <option value="Hadir">Hadir</option>
+            <option value="Tidak Hadir">Maaf, Tidak Bisa Hadir</option>
+          </select>
+        </div>
+      </div>
+      
+      <div class="col-12" style="margin-top: 35px;">
+        <button class="btn btn-primary px-5 btn-kirim">Kirim</button>
+        <button class="btn btn-primary px-5 btn-loading d-none" type="button" disabled>
+          <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+          Loading...
+        </button>
+      </div>
+
+    </form>
+  </div>
+</section>
+
+<script>
+  const form = document.getElementById('rsvp-form');
+  const btnKirim = document.querySelector('.btn-kirim');
+  const btnLoading = document.querySelector('.btn-loading');
+
+  form.addEventListener('submit', (e) => {
+    e.preventDefault(); 
+
+   
+    btnLoading.classList.remove('d-none');
+    btnKirim.classList.add('d-none');
+
+    
+    setTimeout(() => {
+      
+      btnLoading.classList.add('d-none');
+      btnKirim.classList.remove('d-none');
+
+      
+      alert('Terimakasih! Konfirmasi Anda telah kami terima.');
+
+      
+      form.reset();
+    }, 2000); 
+  });
+</script>
+  <style>
+  
+.gallery img {
+    width: 100%;          
+    height: 400px;        
+    object-fit: cover;  
+    border-radius: 5px;  
+    cursor: pointer;
+    
+   
+    transition: transform 0.3s ease;
+    border: 1px solid #333;
+}
+
+.gallery img:hover {
+    transform: scale(1.02);
+    border-color: var(--primary-color);
+    box-shadow: 0 0 15px rgba(212, 175, 55, 0.5);
+}
+</style>
+  <section id="gifts" class="gifts">
+    <div class="container">
+      <div class="row justify-content-center" data-aos="fade-up">
+        <div class="col-md-8 col-10 text-center">
+          <span style="color: var(--primary-color);">TANDA KASIH</span>
+          <h2>Kirim Hadiah</h2>
+          <p class="text-white-50">Doa restu Anda merupakan karunia yang sangat berarti bagi kami.</p>
+        </div>
+      </div>
+
+      <div class="row justify-content-center text-center mt-4">
+        <div class="col-md-6">
+          <ul class="list-group list-group-flush bg-transparent">
+            <li class="list-group-item bg-transparent text-white border-0">
+              <div class="d-flex justify-content-center gap-3">
+                 <div class="card p-3" style="width: 18rem; border-color: var(--primary-color);">
+                    <div class="fw-bold fs-4 text-warning">BCA</div>
+                    <div class="fs-5">2880515791</div>
+                    <div>a.n Abdullah Irfan budiono</div>
+                 </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="py-5" style="background-color: black; border-top: 1px solid #333;">
+    <div class="container">
+      <div class="row">
+        <div class="col text-center">
+          <h3 style="font-size: 1.5rem;">A & I</h3>
+          <small class="block text-white-50">&copy; 2029 Abdullah & Intan Wedding.</small>
+          <div class="mt-3">
+            <a href="https://www.instagram.com/abdul_syputra17" target="_blank" class="text-white mx-2 text-decoration-none">
+                <i class="bi bi-instagram"></i> abdul_syputra17
+                </a>
+
+                 <br class="d-md-none"> <a href="https://wa.me/6288975105176" target="_blank" class="text-white mx-2 text-decoration-none">
+                <i class="bi bi-whatsapp"></i> +62 889-7510-5176
+                </a>
+            </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <audio id="bg-music" loop>
+  <source src="audio/wedding-song.mp3" type="audio/mp3">
+</audio>
+
+<script>
+  window.addEventListener('load', function() {
+    const music = document.getElementById('bg-music');
+    
+    
+    music.volume = 0.7;
+
+ 
+    var promise = music.play();
+
+    if (promise !== undefined) {
+      promise.then(_ => {
+       
+        console.log("Autoplay jalan");
+      }).catch(error => {
+        
+        console.log("Autoplay diblokir browser. Mengaktifkan jebakan klik.");
+        document.addEventListener('click', function() {
+          music.play();
+        }, { once: true }); 
+        document.addEventListener('touchstart', function() {
+          music.play();
+        }, { once: true });
+        
+        document.addEventListener('scroll', function() {
+          music.play();
+        }, { once: true });
+      });
+    }
+  });
+</script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>
+    AOS.init({
+        once: true,
+        offset: 200,
+    });
+
+    simplyCountdown('.simply-countdown', {
+      year: 2029, 
+      month: 5, 
+      day: 19, 
+      hours: 8, 
+      words: { 
+        days: { singular: 'hari', plural: 'hari' },
+        hours: { singular: 'jam', plural: 'jam' },
+        minutes: { singular: 'menit', plural: 'menit' },
+        seconds: { singular: 'detik', plural: 'detik' }
+      },
+    });
+
+    // Scroll Logic
+    const rootElement = document.querySelector(":root");
+    const audioIconWrapper = document.querySelector('.audio-icon-wrapper');
+    const audioIcon = document.querySelector('.audio-icon-wrapper i');
+    const song = document.querySelector('#song');
+    let isPlaying = false;
+
+    function disableScroll() {
+      scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+
+      window.onscroll = function () {
+        window.scrollTo(scrollTop, scrollLeft);
+      }
+      rootElement.style.scrollBehavior = 'auto';
+    }
+
+    function enableScroll() {
+      window.onscroll = function () { }
+      rootElement.style.scrollBehavior = 'smooth';
+      playAudio();
+    }
+
+    function playAudio() {
+      song.volume = 0.5;
+      audioIconWrapper.style.display = 'flex';
+      song.play();
+      isPlaying = true;
+    }
+
+    audioIconWrapper.onclick = function () {
+      if (isPlaying) {
+        song.pause();
+        audioIcon.classList.remove('bi-disc');
+        audioIcon.classList.add('bi-pause-circle');
+      } else {
+        song.play();
+        audioIcon.classList.add('bi-disc');
+        audioIcon.classList.remove('bi-pause-circle');
+      }
+      isPlaying = !isPlaying;
+    }
+
+    disableScroll();
+    
+    // URL Params for Names
+    const urlParams = new URLSearchParams(window.location.search);
+    const nama = urlParams.get('n') || '';
+    const pronoun = urlParams.get('p') || 'Bapak/Ibu/Saudara/i';
+    const namaContainer = document.querySelector('.hero h4 span');
+    namaContainer.innerText = `${pronoun} ${nama},`.replace(/ ,$/, ',');
+    document.querySelector('#nama').value = nama;
+  </script>
+</body>
+</html>
