@@ -29,11 +29,13 @@ Sebuah website undangan pernikahan digital (Web Invitation) yang responsif, este
     * [BS5 Lightbox](https://trvswgnr.github.io/bs5-lightbox/)
 
 
-##📝 Catatan Pengembang
+## 📝 Catatan Pengembang
+
 RSVP: Saat ini fitur RSVP menggunakan JavaScript murni untuk simulasi (menampilkan alert sukses). Untuk penggunaan nyata, disarankan menghubungkannya ke Google Sheets (via Google Apps Script) atau Backend Database.
 
 Musik: Beberapa browser memblokir autoplay audio secara default. Oleh karena itu, musik baru akan berputar setelah tombol "Lihat Undangan" diklik oleh user.
 
-##👤 Author
+## 👤 Author
+
 Abdullah Irfan Budiono
 Mahasiswa Teknik Informatika, Universitas Pamulang.
