@@ -32,7 +32,7 @@ Sebuah website undangan pernikahan digital (Web Invitation) yang responsif, este
 
 Pastikan susunan folder dan file aset kamu seperti berikut agar semua gambar dan musik berjalan dengan benar:
 
-```text
+text
 wedding-invitation/
 │
 ├── index.html                # File utama (Main Code)
@@ -54,29 +54,12 @@ wedding-invitation/
         ├── karikatur 2.jpeg
         └── karikatur 3.jpeg
 
-🚀 Cara Penggunaan
-1. Menjalankan Website
-Cukup buka file index.html menggunakan browser modern (Chrome, Edge, Firefox, atau Safari).
 
-2. Fitur Sebar Undangan (Nama Tamu)
-Kamu bisa membuat link khusus untuk setiap tamu agar nama mereka muncul di halaman depan. Tambahkan parameter ?n= (nama) dan ?p= (panggilan) di akhir URL.
-
-Format URL:
-
-index.html?p=Panggilan&n=Nama Tamu
-
-Contoh: Jika ingin mengundang Bapak Jokowi, gunakan link:
-
-[yourwebsite.com/index.html?p=Bapak&n=Jokowi](https://yourwebsite.com/index.html?p=Bapak&n=Jokowi)
-Hasil Tampilan:
-
-Kepada Bapak Jokowi,
-
-📝 Catatan Pengembang
+##📝 Catatan Pengembang
 RSVP: Saat ini fitur RSVP menggunakan JavaScript murni untuk simulasi (menampilkan alert sukses). Untuk penggunaan nyata, disarankan menghubungkannya ke Google Sheets (via Google Apps Script) atau Backend Database.
 
 Musik: Beberapa browser memblokir autoplay audio secara default. Oleh karena itu, musik baru akan berputar setelah tombol "Lihat Undangan" diklik oleh user.
 
-👤 Author
+##👤 Author
 Abdullah Irfan Budiono
 Mahasiswa Teknik Informatika, Universitas Pamulang.
